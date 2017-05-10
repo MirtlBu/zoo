@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zoo</title>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <link rel="stylesheet" href="tiny-slider.css">
+        <style type="text/css">
+            html, body {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+            }
+            body {
+                background-color: #eee;
+            }
+            [data-tns-role="wrapper"], [data-tns-role="content-wrapper"], .slider {
+                height: 100%;
+            }
+            [data-tns-role="controls"] {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            [data-controls="prev"], [data-controls="next"] {
+                position: absolute;
+                top: 0;
+                font-size: 3em;
+                color: #333;
+                background-color: transparent;
+            }
+            [data-controls="prev"] {
+                left: 1%;
+            }
+            [data-controls="next"] {
+                right: 1%;
+            }
+            .svg {
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+            }
+            svg {
+                user-select: none;
+            }
+            .cat .parts {
+                transition: all .5s cubic-bezier(0.39, 0.58, 0.57, 1)
+            }
+
+            .cat .parts.transform {
+                transform: translate(0px, 10px)
+            }
+            .owl .parts {
+                transition: all .5s ease-in-out;
+            }
+            #left_wing.transform {
+                transform: translate(-10px, 50px) rotate(45deg) !important;
+            }
+            #right_wing.transform {
+                transform: translate(-5px, 22px) rotate(-45deg) !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="slider">
+            <div class="svg">
+                <audio class="cat_sound" src="sounds/cat.wav"></audio>
+                <svg class="cat" width="100%" height="100%" viewBox="0 0 225 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+                    <title>cat</title>
+                    <desc>Created using Figma</desc>
+                    <text x="72" y="15" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">
+                        Погладь кота!
+                    </text>
+                    <g id="Canvas" transform="translate(-85 75)" figma:type="canvas">
+                        <g id="cat" figma:type="frame">
+                            <g id="body" figma:type="frame">
+                                <g id="body" figma:type="vector">
+                                    <use xlink:href="#path_a_0_fill" transform="translate(137.875 -54.143)" fill="#F2994A"/>
+                                </g>
+                                <g id="belly" figma:type="vector">
+                                    <use xlink:href="#path_a_1_fill" transform="translate(152.994 40)" fill="#F2F2F2" fill-opacity="0.5"/>
+                                </g>
+                            </g>
+                            <g id="legs" figma:type="frame">
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path_a_2_fill" transform="translate(171 99)" fill="#F2994A"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path_a_2_fill" transform="translate(204 99)" fill="#F2994A"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path_a_2_fill" transform="translate(228 94)" fill="#F2994A"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path_a_2_fill" transform="translate(146 94)" fill="#F2994A"/>
+                                </g>
+                            </g>
+                            <g id="eyes" figma:type="frame">
+                                <g id="left_eye" figma:type="frame">
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path_a_3_fill" transform="translate(158.5 -17.4376)" fill="#F2F2F2"/>
+                                    </g>
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path_a_4_fill" transform="translate(164.125 -11.8126)" fill="#333333"/>
+                                    </g>
+                                </g>
+                                <g id="right_eye" figma:type="frame">
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path_a_3_fill" transform="translate(203.5 -17.4376)" fill="#F2F2F2"/>
+                                    </g>
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path_a_4_fill" transform="translate(209.125 -11.8126)" fill="#333333"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="mouth" figma:type="frame">
+                                <g class="parts" id="tongue" figma:type="vector">
+                                    <use xlink:href="#path_a_5_fill" transform="translate(189 10)" fill="#EB5757"/>
+                                    <use xlink:href="#path_a_6_stroke" transform="translate(189 10)" fill="#EB5757"/>
+                                </g>
+                                <g id="Group" figma:type="frame">
+                                    <g id="Vector" figma:type="vector">
+                                        <use xlink:href="#path_a_7_fill" transform="translate(182 7.5)" fill="#F2994A"/>
+                                    </g>
+                                    <g id="Ellipse 2" figma:type="vector">
+                                        <use xlink:href="#path_a_8_fill" transform="translate(189 7)" fill="#EB5757"/>
+                                    </g>
+                                    <g id="Vector" figma:type="vector">
+                                        <use xlink:href="#path_a_9_stroke" transform="translate(182 14)" fill="#EB5757"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="strips" figma:type="frame">
+                                <g id="Vector 2" figma:type="vector">
+                                    <use xlink:href="#path_a_10_stroke" transform="translate(196 -36)" fill="#894D19"/>
+                                </g>
+                                <g id="Vector 2" figma:type="vector">
+                                    <use xlink:href="#path_a_10_stroke" transform="translate(207 -36)" fill="#894D19"/>
+                                </g>
+                                <g id="Vector 2" figma:type="vector">
+                                    <use xlink:href="#path_a_10_stroke" transform="translate(185 -36)" fill="#894D19"/>
+                                </g>
+                            </g>
+                            <g id="tail" figma:type="frame">
+                                <g id="Vector 3" figma:type="vector">
+                                    <use xlink:href="#path_a_11_fill" transform="matrix(1 2.42861e-16 -2.42861e-16 1 242 61)" fill="#F2994A"/>
+                                </g>
+                                <g id="strips" figma:type="frame">
+                                    <g id="Vector 2" figma:type="vector">
+                                        <use xlink:href="#path_a_10_stroke" transform="matrix(0.422618 -0.906308 0.906308 0.422618 270.521 110.946)" fill="#894D19"/>
+                                    </g>
+                                    <g id="Vector 2" figma:type="vector">
+                                        <use xlink:href="#path_a_10_stroke" transform="matrix(0.390731 -0.920505 0.920505 0.390731 275.078 101.184)" fill="#894D19"/>
+                                    </g>
+                                    <g id="Vector 2" figma:type="vector">
+                                        <use xlink:href="#path_a_10_stroke" transform="matrix(0.422618 -0.906308 0.906308 0.422618 265.872 120.915)" fill="#894D19"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <defs>
+                        <path id="path_a_0_fill" d="M 58.1249 160.455C 85.0487 160.455 116.25 147.29 116.25 122.955C 116.25 122.955 107.625 -4.85705 106.875 0.142966C 106.281 4.10236 94.1248 18.143 80.1248 18.143L 58.1248 18.143L 36.1248 18.143C 22.1248 18.143 9.90279 2.95872 9.37498 0.142966C 8.62519 -3.85704 0 122.955 0 122.955C 0 147.29 31.2011 160.455 58.1249 160.455Z"/>
+                        <path id="path_a_1_fill" d="M 86.0156 31.5C 85.5156 48 78.0126 66.5 43.0126 66.5C 8.01258 66.5 0.515597 48 0.015594 31.5C -0.484409 15 10.9801 0 43.0126 0C 75.0451 0 86.5156 15 86.0156 31.5Z"/>
+                        <path id="path_a_2_fill" d="M 6.54545 9.18C 7.52293 9.18 8.40032 8.58757 9 7.64828C 9.59968 8.58757 10.4771 9.18 11.4545 9.18C 12.3018 9.18 13.0985 8.72287 13.6801 7.99239C 14.1303 8.71932 14.799 9.18 15.5455 9.18C 16.9011 9.18 18 7.66075 18 5.78667C 18 5.78667 18 0 9 0C 0 0 0 5.78667 0 5.78667C 0 7.66075 1.09894 9.18 2.45455 9.18C 3.20627 9.18 3.87907 8.71282 4.32932 7.97703C 4.91304 8.72443 5.68709 9.18 6.54545 9.18Z"/>
+                        <path id="path_a_3_fill" d="M 29.9999 15C 29.9999 23.2842 23.2842 29.9999 15 29.9999C 6.71572 29.9999 0 23.2842 0 15C 0 6.71572 6.71572 0 15 0C 23.2842 0 29.9999 6.71572 29.9999 15Z"/>
+                        <path id="path_a_4_fill" d="M 18.75 9.37498C 18.75 14.5526 14.5526 18.75 9.37498 18.75C 4.19732 18.75 0 14.5526 0 9.37498C 0 4.19732 4.19732 0 9.37498 0C 14.5526 0 18.75 4.19732 18.75 9.37498Z"/>
+                        <path id="path_a_5_fill" d="M 7 11C 10.866 11 14 7.86599 14 4L 7 0L 0 4C 0 7.86599 3.13401 11 7 11Z"/>
+                        <path id="path_a_6_stroke" d="M 14 4L 15.5 4C 15.5 3.46171 15.2116 2.9647 14.7442 2.69764L 14 4ZM 0 4L -0.744208 2.69764C -1.21157 2.9647 -1.5 3.46171 -1.5 4L 0 4ZM 7 0L 7.74421 -1.30236C 7.28306 -1.56588 6.71694 -1.56588 6.25579 -1.30236L 7 0ZM 12.5 4C 12.5 7.03757 10.0376 9.5 7 9.5L 7 12.5C 11.6944 12.5 15.5 8.69442 15.5 4L 12.5 4ZM 7 9.5C 3.96243 9.5 1.5 7.03757 1.5 4L -1.5 4C -1.5 8.69442 2.30558 12.5 7 12.5L 7 9.5ZM 0.744208 5.30236L 7.74421 1.30236L 6.25579 -1.30236L -0.744208 2.69764L 0.744208 5.30236ZM 6.25579 1.30236L 13.2558 5.30236L 14.7442 2.69764L 7.74421 -1.30236L 6.25579 1.30236Z"/>
+                        <path id="path_a_7_fill" d="M 14 10.3182C 14 14.1842 10.866 17.3182 7 17.3182C 3.13401 17.3182 0 14.1842 0 10.3182L 4 6.5L 14 0L 24 6.5L 28 10.3182C 28 14.1842 24.866 17.3182 21 17.3182C 17.134 17.3182 14 14.1842 14 10.3182Z"/>
+                        <path id="path_a_8_fill" d="M 14 3.5C 14 5.433 7 7 7 7C 7 7 0 5.433 0 3.5C 0 1.567 3.13401 0 7 0C 10.866 0 14 1.567 14 3.5Z"/>
+                        <path id="path_a_9_stroke" d="M 1.5 3.81818C 1.5 2.98976 0.828427 2.31818 0 2.31818C -0.828427 2.31818 -1.5 2.98976 -1.5 3.81818L 1.5 3.81818ZM 29.5 3.81818C 29.5 2.98976 28.8284 2.31818 28 2.31818C 27.1716 2.31818 26.5 2.98976 26.5 3.81818L 29.5 3.81818ZM 15.5 0C 15.5 -0.828427 14.8284 -1.5 14 -1.5C 13.1716 -1.5 12.5 -0.828427 12.5 0L 15.5 0ZM 12.5 3.81818C 12.5 6.85575 10.0376 9.31818 7 9.31818L 7 12.3182C 11.6944 12.3182 15.5 8.5126 15.5 3.81818L 12.5 3.81818ZM 7 9.31818C 3.96243 9.31818 1.5 6.85575 1.5 3.81818L -1.5 3.81818C -1.5 8.5126 2.30558 12.3182 7 12.3182L 7 9.31818ZM 26.5 3.81818C 26.5 6.85575 24.0376 9.31818 21 9.31818L 21 12.3182C 25.6944 12.3182 29.5 8.5126 29.5 3.81818L 26.5 3.81818ZM 21 9.31818C 17.9624 9.31818 15.5 6.85575 15.5 3.81818L 12.5 3.81818C 12.5 8.5126 16.3056 12.3182 21 12.3182L 21 9.31818ZM 12.5 0L 12.5 3.81818L 15.5 3.81818L 15.5 0L 12.5 0Z"/>
+                        <path id="path_a_10_stroke" d="M -2.5 13C -2.5 14.3807 -1.38071 15.5 0 15.5C 1.38071 15.5 2.5 14.3807 2.5 13L -2.5 13ZM -2.5 0L -2.5 13L 2.5 13L 2.5 0L -2.5 0Z"/>
+                        <path id="path_a_11_fill" d="M 55.7648 16.6956C 38.9281 -5.8175 0 0.955962 0 0.955962L 9.40423 17.9871C 9.40423 17.9871 23.3642 14.7521 32.8961 26.7697C 42.428 38.7873 8.2743 71.6018 23.7648 81.1956C 39.2553 90.7893 72.6015 39.2087 55.7648 16.6956Z"/>
+                    </defs>
+                </svg>
+            </div>
+            <div class="svg">
+                <audio class="owl_sound" src="sounds/owl.wav"></audio>
+                <svg class="owl" width="100%" height="100%" viewBox="0 0 225 230" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+                    <title>owl</title>
+                    <desc>Created using Figma</desc>
+                    <text x="72" y="15" font-family="Helvetica, Arial, sans-serif" font-size="12" fill="#333333">
+                        Потрогай сову!
+                    </text>
+                    <g id="Canvas" transform="translate(135 75)" figma:type="canvas">
+                        <g id="owl" figma:type="frame">
+                            <g id="wings" figma:type="frame">
+                                <g class="parts" id="left_wing" figma:type="vector" class="wings">
+                                    <use xlink:href="#path0_fill" transform="matrix(1 -1.11022e-16 1.11022e-16 1 -95.0002 -6.68758)" fill="#BD4141"/>
+                                </g>
+                                <g class="parts" id="right_wing" figma:type="vector" class="wings">
+                                    <use xlink:href="#path0_fill" transform="matrix(-1 0 0 1 54.9999 -6.6876)" fill="#BD4141"/>
+                                </g>
+                            </g>
+                            <g id="body" figma:type="vector">
+                                <use xlink:href="#path1_fill" transform="translate(-78.125 -54.5)" fill="#EB5757"/>
+                            </g>
+                            <g id="eyes" figma:type="frame">
+                                <g id="left_eye" figma:type="frame">
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path2_fill" transform="translate(-57.5 -17.9376)" fill="#F2F2F2"/>
+                                    </g>
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path3_fill" transform="translate(-51.875 -12.3126)" fill="#333333"/>
+                                    </g>
+                                </g>
+                                <g id="right_eye" figma:type="frame">
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path2_fill" transform="translate(-12.5001 -17.9376)" fill="#F2F2F2"/>
+                                    </g>
+                                    <g id="Ellipse" figma:type="ellipse">
+                                        <use xlink:href="#path3_fill" transform="translate(-6.87513 -12.3126)" fill="#333333"/>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="beak" figma:type="vector">
+                                <use xlink:href="#path4_fill" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 -12.5001 15.8124)" fill="#F2C94C"/>
+                            </g>
+                            <g id="feathers" figma:type="frame">
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path5_fill" transform="translate(-33.1251 36.4373)" fill="#F2C94C"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path5_fill" transform="translate(-50 57.0623)" fill="#F2C94C"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path5_fill" transform="translate(-33.1251 77.6872)" fill="#F2C94C"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path5_fill" transform="translate(-14.3751 57.0623)" fill="#F2C94C"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path5_fill" transform="translate(0.62487 36.4373)" fill="#F2C94C"/>
+                                </g>
+                                <g id="Vector" figma:type="vector">
+                                    <use xlink:href="#path5_fill" transform="translate(-66.875 36.4373)" fill="#F2C94C"/>
+                                </g>
+                            </g>
+                            <g id="legs" figma:type="frame">
+                                <g id="left_leg" figma:type="vector">
+                                    <use xlink:href="#path6_fill" transform="translate(-44.375 96.4372)" fill="#F2C94C"/>
+                                </g>
+                                <g id="right_leg" figma:type="vector">
+                                    <use xlink:href="#path6_fill" transform="translate(-8.75011 96.4372)" fill="#F2C94C"/>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <defs>
+                        <path id="path0_fill" d="M 52.4999 53.1258C 52.4999 81.0851 29.0624 91.5632 26.25 103.751C 23.4375 115.938 0 81.0851 0 53.1258C 0 25.1664 14.0625 14.6883 26.25 2.50086C 38.4374 -9.68662 52.4999 25.1664 52.4999 53.1258Z"/>
+                        <path id="path1_fill" d="M 58.1249 160.312C 85.0487 160.312 116.25 147.147 116.25 122.812L 106.875 0C 106.875 12.4264 85.0487 21.5625 58.1249 21.5625C 31.2011 21.5625 9.37498 12.4264 9.37498 0L 0 122.812C 0 147.147 31.2011 160.312 58.1249 160.312Z"/>
+                        <path id="path2_fill" d="M 29.9999 15C 29.9999 23.2842 23.2842 29.9999 15 29.9999C 6.71572 29.9999 0 23.2842 0 15C 0 6.71572 6.71572 0 15 0C 23.2842 0 29.9999 6.71572 29.9999 15Z"/>
+                        <path id="path3_fill" d="M 18.75 9.37498C 18.75 14.5526 14.5526 18.75 9.37498 18.75C 4.19732 18.75 0 14.5526 0 9.37498C 0 4.19732 4.19732 0 9.37498 0C 14.5526 0 18.75 4.19732 18.75 9.37498Z"/>
+                        <path id="path4_fill" d="M 7.49999 0L 15 13.5L 7.49999 15L 0 13.5L 7.49999 0Z"/>
+                        <path id="path5_fill" d="M 0 0.165476C 3.37534 2.73096 7.93811 4.30509 12.9602 4.30509C 17.9823 4.30509 22.7621 2.56548 26.1374 0C 23.5136 5.05579 18.4745 8.61018 12.9602 8.61018C 7.44593 8.61018 2.62386 5.22126 0 0.165476Z"/>
+                        <path id="path6_fill" d="M 0 6.56249C 0 9.15132 1.2592 11.25 2.81249 11.25C 3.3668 11.25 3.88364 10.9827 4.31918 10.5213C 4.8327 12.1031 5.64645 13.125 6.56249 13.125C 7.47852 13.125 8.29227 12.1031 8.80579 10.5213C 9.24133 10.9827 9.75818 11.25 10.3125 11.25C 11.8658 11.25 13.125 9.15132 13.125 6.56249C 13.125 3.97366 11.8658 1.875 10.3125 1.875C 9.75818 1.875 9.24133 2.14225 8.80579 2.60366C 8.29227 1.02184 7.47852 0 6.56249 0C 5.64645 0 4.8327 1.02184 4.31918 2.60366C 3.88364 2.14225 3.3668 1.875 2.81249 1.875C 1.2592 1.875 0 3.97366 0 6.56249Z"/>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <script src="tiny-slider.js"></script>
+        <script type="text/javascript">
+
+            var slider = tns({
+              container: document.querySelector('.slider'),
+              items: 1,
+              arrowKeys: true,
+              speed: 500,
+              controlsText: ['&#60;', '&#62;']
+            });
+
+            var svg = document.querySelectorAll('.svg');
+            svg.forEach(function(item) {
+                    item.addEventListener('click', moveIt);
+                });
+
+            function moveIt(e) {
+                var current_elem = e.currentTarget;
+                console.log(current_elem);
+
+                var audio = current_elem.querySelector('audio');
+                audio.currentTime = 0;
+                audio.play();
+
+                var parts = current_elem.querySelectorAll('.parts');
+
+                parts.forEach(function(item) {
+                    item.setAttribute("class", "parts transform" );
+                });
+                setTimeout(function() {
+                    parts.forEach(function(item) {
+                        item.setAttribute("class", "parts");
+                    });
+                }, 500);
+            }
+
+
+
+        </script>
+    </body>
+</html>

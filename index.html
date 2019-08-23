@@ -61,17 +61,24 @@
             .owl .parts {
                 transition: all .5s ease-in-out;
             }
+            #left_wing {
+                transform: translate(-85px, -30px);
+            }
+            #right_wing {
+                transform: scale(-1, 1) translate(-78px, -30px);
+            }
             #left_wing.transform {
-                transform: translate(-55%, 20%) rotate(45deg) !important;
+                transform: translate(-75px, -50px) rotate(45deg);
             }
             #right_wing.transform {
-                transform: translate(52%, 17%) rotate(-45deg) !important;
+                transform: scale(-1, 1) translate(-68px, -50px) rotate(45deg);
             }
-            .hare #nose use {
+            .hare #nose {
                 transition: all 1.5s cubic-bezier(1, 2.19, 0, -1.18);
+                transform: translate(-27px, 6px);
             }
-            .hare #nose.transform use {
-                transform: scale(1.8) translate(-129%, 30%);
+            .hare #nose.transform {
+                transform: translate(-33px, 0px) scale(1.8);
             }
             .hare #left_ear {
                 transition: all 1s linear;
@@ -161,8 +168,8 @@
                             <g id="mouth" figma:type="vector">
                                 <use xlink:href="#path_h7_stroke" transform="translate(-33.8752 13.143)" fill="#4F4F4F"/>
                             </g>
-                            <g class="parts" id="nose" figma:type="vector">
-                                <use xlink:href="#path_h8_fill" transform="translate(-26.8752 6.14298)" fill="#4F4F4F"/>
+                            <g id="nose" class="parts" figma:type="vector">
+                                <use xlink:href="#path_h8_fill" fill="#4F4F4F"/>
                             </g>
                         </g>
                     </g>
@@ -191,10 +198,10 @@
                         <g id="owl" figma:type="frame">
                             <g id="wings" figma:type="frame">
                                 <g class="parts" id="left_wing" figma:type="vector">
-                                    <use xlink:href="#path_o0_fill" transform="matrix(1 -1.11022e-16 1.11022e-16 1 -78 -37.6876)" fill="#BD4141"/>
+                                    <use xlink:href="#path_o0_fill" fill="#BD4141"/>
                                 </g>
                                 <g class="parts" id="right_wing" figma:type="vector">
-                                    <use xlink:href="#path_o0_fill" transform="matrix(-1 0 0 1 72.0001 -37.6876)" fill="#BD4141"/>
+                                    <use xlink:href="#path_o0_fill" fill="#BD4141"/>
                                 </g>
                             </g>
                             <g id="body" figma:type="vector">
